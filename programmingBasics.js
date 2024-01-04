@@ -20,3 +20,10 @@ for (let i = 0; i < movieArray.length; i++) {
     const words = movieArray[i]..split(" ").length;
     console.log(`"${title}" has ${words} words.`);   
 }
+
+//Log out the number of letters in each movie title.
+for (let i = 0; i < movieTitles.length; i++) {
+  const numberOfLetters = movieTitles[i].replace(/[^a-zA-Z]/g, "").length; // Count only letters
+
+  console.log(`"${title}" has ${numberOfLetters} letters.`);
+}
