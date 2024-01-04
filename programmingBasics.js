@@ -17,13 +17,15 @@ for (let i = 0; i < movieArray.length; i++) {
 
 //Log out the number of words in each movie title.
 for (let i = 0; i < movieArray.length; i++) {
-    const words = movieArray[i]..split(" ").length;
-    console.log(`"${movieArray[i]}" has ${words} words.`);   
+    const movieTitle = movieArray[i];
+    const words = movieTitle.split(" ").length;
+    console.log(`"${movieTitle}" has ${words} words.`);   
 }
 
 //Log out the number of letters in each movie title.
-for (let i = 0; i < movieTitles.length; i++) {
-  const numberOfLetters = movieTitles[i].replace(/[^a-zA-Z]/g, "").length; // Count only letters
+for (let i = 0; i < movieArray.length; i++) {
+    const movieTitle = movieArray[i];
+  const numberOfLetters = movieTitle.replace(/[^a-zA-Z]/g, "").length; // Count only letters
 
-  console.log(`"${movieArray[i]}" has ${numberOfLetters} letters.`);
+  console.log(`"${movieTitle}" has ${numberOfLetters} letters.`);
 }
