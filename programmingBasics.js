@@ -17,5 +17,6 @@ for (let i = 0; i < movieArray.length; i++) {
 
 //Log out the number of words in each movie title.
 for (let i = 0; i < movieArray.length; i++) {
-    console.log(movieArray[i].length);   
+    const words = movieArray[i]..split(" ").length;
+    console.log(`"${title}" has ${words} words.`);   
 }
